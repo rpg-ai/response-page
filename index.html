@@ -6,10 +6,12 @@
             <p>"Come With Me If You Want To Live."</p> </h2>
         <h1 style="font-family:'Courier New'">Roll a <span id="skill"></span> check</h1>
         <img src="terminator.jpg" height="100%">
+        <h3><p style="font-family:'Courier New'" id="predicts"></p></h3>
         <script>
             const queryString = window.location.search
             const urlParams = new URLSearchParams(queryString)
             document.getElementById("skill").innerHTML = urlParams.get('skill')
+            document.getElementById("predicts").innerHTML = urlParams.get('predicts')
         </script>
     </body>
 </html>
